@@ -1,0 +1,192 @@
+<div class="notice d-flex bg-light-primary rounded border-primary border border-dashed p-6 mb-3">
+    <div class="d-flex flex-stack flex-grow-1 flex-wrap flex-md-nowrap">
+        <div class="row">
+            <div class="btn-group " role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-primary float-left" >Save</button>
+                <button type="button" class="btn btn-warning float-left">Cancel</button>
+                <button type="button" class="btn btn-danger float-left">Back</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Parital View For Search-->
+<app-search-tab></app-search-tab>
+
+<!--Service Information-->
+<div class="card mb-5 mb-xl-10">
+    <!--begin::Card header-->
+    <div class="card-header card-header-stretch pb-0 panel1bgColor">
+        <!--begin::Title-->
+        <div class="card-title">
+            <h3 class="m-0">Service Information</h3>
+        </div>
+        <div class="card-title">
+            <h3 class="m-0 text-danger">Service Status</h3>
+        </div>
+        <!--end::Title-->
+    </div>
+    <!--end::Card header-->
+    <!--begin::Tab content-->
+    <div id="kt_billing_payment_tab_content" class="card-body tab-content">
+        <!--begin::Tab panel-->
+        <div id="kt_billing_creditcard" class="tab-pane fade show active" role="tabpanel">
+            <!--begin::Title-->
+            <!-- <h3 class="mb-5">Job Information</h3> -->
+            <!--end::Title-->
+            <!--begin::Row-->
+            <div class="row gx-9 gy-6">
+                <form autocomplete="off">
+                    <div class="row mb-6">
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Service Type</span></label>
+                            <select class="form-control bg-light" aria-label="Select example">
+                                <option>-Select-</option>
+                                <option value="1">Type 1</option>
+                                <option value="2">Type 2</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Service Sub Type</span></label>
+                            <select class="form-control bg-light" aria-label="Select example">
+                                <option>-Select-</option>
+                                <option value="1">Type 1</option>
+                                <option value="2">Type 2</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Service Number</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0" readonly
+                                />
+                        </div>
+                    </div>
+                    <div class="row mb-6">
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Amount</span></label>
+                            <input type="number" class="form-control form-control-lg  mb-3 mb-lg-0" 
+                                />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Number of Installments</span></label>
+                            <input type="number" class="form-control form-control-lg  mb-3 mb-lg-0" 
+                                />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Installment Amount</span></label>
+                            <input type="number" class="form-control form-control-lg  mb-3 mb-lg-0" 
+                                />
+                        </div>
+                    </div>
+                    <div class="row mb-6">
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><small class="text-danger">Incase of Gift By Default=Y </small> <span class=""> Gift Amount</span> </label>
+                            <input type="number" class="form-control form-control-lg  mb-3 mb-lg-0" 
+                                />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Starting Deduction Month</span></label>
+                            <input type="number" class="form-control form-control-lg  mb-3 mb-lg-0" 
+                                />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-form-label fw-bold fs-6"><span class="">Untill the Month</span></label>
+                            <input type="date" class="form-control form-control-lg  mb-3 mb-lg-0" 
+                                />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--end::Row-->
+        </div>
+
+    </div>
+    <!--end::Tab content-->
+</div>
+<!--Payment Information-->
+<div class="card mb-5 mb-xl-10">
+    <!--begin::Card header-->
+    <div class="card-header card-header-stretch pb-0 panel2bgColor">
+        <!--begin::Title-->
+        <div class="card-title">
+            <h3 class="m-0">Payment Information</h3>
+        </div>
+        <!--end::Title-->
+    </div>
+    <!--end::Card header-->
+    <!--begin::Tab content-->
+    <div id="kt_billing_payment_tab_content" class="card-body tab-content">
+        <!--begin::Tab panel-->
+        <div id="kt_billing_creditcard" class="tab-pane fade show active" role="tabpanel">
+            <!--begin::Title-->
+            <!-- <h3 class="mb-5">Personal Information</h3> -->
+            <!--end::Title-->
+            <!--begin::Row-->
+            <div class="row gx-9 gy-6">
+                <form autocomplete="off">                    
+                    <div class="row mb-4">
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="">Beneficiary</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="">Accountant</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                       
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-6 col-form-label fw-bold fs-6"><span class="">Bank </span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="">Voucher Id</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-4 col-form-label fw-bold fs-6"><span class="">Voucher Date</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                        
+                    </div>
+                    <div class="row mb-4">
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-6 col-form-label fw-bold fs-6"><span class="">Collected Date</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-8 col-form-label fw-bold fs-6"><span class="">Collected by Relative</span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                        <div class="col-lg-4 fv-row">
+                            <label class="col-lg-8 col-form-label fw-bold fs-6"><span class="">Collected Person Civil ID </span></label>
+                            <input type="text" class="form-control form-control-lg  mb-3 mb-lg-0"
+                                name="nameInArabic" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <!--end::Row-->
+        </div>
+
+    </div>
+    <!--end::Tab content-->
+    
+</div>
+
+<!--Financial Details-->
+<app-financial-detials></app-financial-detials>
+<br/>
+
+<!--Approval Details-->
+<app-approval-detials></app-approval-detials>
+
+
+
